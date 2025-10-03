@@ -72,7 +72,7 @@ def calcula_indicador():
         print("Alguns indicadores contêm valores NaN. Aguarde mais dados.")
     else:
 
-        if (rsi_atual < 40.21 and preco_atual < sma_200_atual and stoch_k_atual < 26.21 and stoch_d_atual < 26.21):
+        if (rsi_atual < 26.21 and preco_atual < sma_200_atual and stoch_k_atual < 5.58 and stoch_d_atual < 5.58):
             mensagem += f"Compra! RSI: {rsi_atual:.2f}, Preço: {preco_atual:.2f}, SMA_200: {sma_200_atual:.2f}, "f"StochRSI_K: {stoch_k_atual:.2f}, StochRSI_D: {stoch_d_atual:.2f}"
         else:
             mensagem += f"Espere mais um pouco. RSI: {rsi_atual:.2f}, Preço: {preco_atual:.2f}, SMA_200: {sma_200_atual:.2f}, "f"StochRSI_K: {stoch_k_atual:.2f}, StochRSI_D: {stoch_d_atual:.2f}"
